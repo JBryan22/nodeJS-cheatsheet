@@ -20,7 +20,7 @@
 
 ### Install all dependencies
 ```
-npm i -D gulp browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync --save-dev
+npm i -D gulp browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint bower-files browser-sync jasmine karma karma-jasmine jasmine-core karma-chrome-launcher karma-cli karma-browserify karma-jquery karma-jasmine-html-reporter watchify  --save-dev
 ```
 
 ## Bower - front end package manager
@@ -36,6 +36,21 @@ bower install moment --save
   <link rel="stylesheet" href="build/css/vendor.css">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
+```
+
+## Jasmine
+
+### After installing jasmine, place the following code in your package.json file
+```
+"scripts": {
+  "test": "jasmine"
+}
+```
+
+## Karma
+
+```
+karma init
 ```
 
 
